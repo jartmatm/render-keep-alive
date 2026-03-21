@@ -1,0 +1,14 @@
+name: Keep Render Alive
+
+on:
+  schedule:
+    - cron: "*/13 * * * *"  # cada 13 minutos
+  workflow_dispatch:        # permite ejecutarlo manualmente
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hacer ping a Render
+        run: curl https://investup.onrender.com
