@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Ping a la App de InvestUp
         # Reemplaza la URL por el enlace real de tu app en Render
-        run: curl -s https://tu-app-investup.onrender.com > /dev/null
+        run: curl -s https://investup.onrender.com > /dev/null
